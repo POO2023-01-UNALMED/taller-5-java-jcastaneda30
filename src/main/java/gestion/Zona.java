@@ -10,7 +10,8 @@ public class Zona {
 		this.zoo=zoo;
 		this.nombre=nombre;
 	}
-	public Zona(){}
+	public Zona(){
+		this.zoo = null;}
 	
 	public void agregarAnimales(Animal entrada) {
 		Animal[] nuevo = new Animal[animales.length + 1];
