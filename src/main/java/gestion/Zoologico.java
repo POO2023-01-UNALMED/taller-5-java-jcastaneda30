@@ -9,7 +9,7 @@ public class Zoologico {
 		this.ubicacion=ubicacion;
 	}
 	public Zoologico() {}
-	
+		
 	public void agregarZonas(Zona nuevoE) {
 		Zona[] nuevo = new Zona[zonas.length + 1];
 		System.arraycopy(zonas, 0, nuevo, 0, zonas.length);
@@ -41,11 +41,10 @@ public class Zoologico {
         this.ubicacion = ubicacion;
     }
 
-    public Zona[] getZonas() {
+    public Zona[] getZona() {
         return zonas;
     }
-
-    public void setZonas(Zona[] zonas) {
+    public void setZona(Zona[] zonas) {
         this.zonas = zonas;
     }
 }
