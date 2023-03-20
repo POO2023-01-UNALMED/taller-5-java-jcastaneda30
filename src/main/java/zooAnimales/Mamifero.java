@@ -2,8 +2,8 @@ package zooAnimales;
 
 public class Mamifero extends Animal {
 	private Mamifero[] listado = new Mamifero[0];
-	public int caballos;
-	public int leones;
+	public static int caballos;
+	public static int leones;
 	private boolean pelaje;
 	private int patas;
 	
@@ -28,12 +28,37 @@ public class Mamifero extends Animal {
 		return Animal.mamiferos;
 	}
 	
-	public Mamifero crearCaballo(String nombre, int edad,String genero) {
+	public static Mamifero crearCaballo(String nombre, int edad,String genero) {
 		caballos++;
 		return new Mamifero(nombre,edad,"selva",genero,true, 4);
 	}
-	public Mamifero crearLeon(String nombre, int edad,String genero){
+	public static Mamifero crearLeon(String nombre, int edad,String genero){
 		leones++;
 		return new Mamifero(nombre,edad,"selva",genero,true, 4);
 	}
+	
+	public boolean isPelaje() {
+	    return this.pelaje;
+	}
+
+	public void setPelaje(boolean pelaje) {
+	    this.pelaje = pelaje;
+	}
+
+	public int getPatas() {
+	    return this.patas;
+	}
+
+	public void setPatas(int patas) {
+	    this.patas = patas;
+	}
+	public Mamifero[] getListado() {
+	    return this.listado;
+	}
+
+	public void setListado(Mamifero[] listado) {
+	    this.listado = listado;
+	}
+	
+	
 }

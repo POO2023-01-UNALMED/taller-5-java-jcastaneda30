@@ -2,8 +2,8 @@ package zooAnimales;
 
 public class Ave extends Animal{
 	private Ave[] listado = new Ave[0];
-	public int halcones;
-	public int aguilas;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 	
 	public Ave(String nombre,int edad, String habitat, String genero, String colorPlumas){
@@ -27,11 +27,11 @@ public class Ave extends Animal{
 	public String movimiento() {
 		return "volar";
 	}
-	public Ave crearHalcon(String nombre, int edad,String genero){
+	public static Ave crearHalcon(String nombre, int edad,String genero){
 		halcones++;
 		return new Ave(nombre,edad,"montanas",genero,"cafe glorioso");
 	}
-	public Ave crearAguila(String nombre, int edad,String genero){
+	public static Ave crearAguila(String nombre, int edad,String genero){
 		aguilas++;
 		return new Ave(nombre,edad,"montanas",genero,"blanco amarillo");
 	}
