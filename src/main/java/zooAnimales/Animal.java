@@ -76,9 +76,9 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
-	public String totalPorTipo() {
-		return "Mamiferos:"+mamiferos+"\nAves: "+aves+"\n:Reptiles"+reptiles
-				+"\nPeces:"+peces+"\nAnfibios:"+anfibios;
+	public static String totalPorTipo() {
+		return "Mamiferos: "+mamiferos+"\nAves: "+aves+"\nReptiles: "+reptiles
+				+"\nPeces: "+peces+"\nAnfibios: "+anfibios;
 	}
 	public String toString() {
 		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "
